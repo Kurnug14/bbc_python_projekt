@@ -1,5 +1,7 @@
 import json
 import random
+from typing import Union
+
 
 #Make an object that stores the functions and variables necessary to do a learning flashcard session
 
@@ -39,10 +41,16 @@ class ActiveSet :
         json_file_write.close()
         print (index_card, level)
 
-def save_to_json(set_name, set_card):
-    json_card = json.dumps(set_card, indent=4)
-    file_end = ".json"
-
-    json_file = open("sets/"+set_name+file_end, "x")
-    json_file.write(json_card)
-    json_file.close()
+class NewSet:
+    def __init__(self):
+        self.cards = {}
+        self.index = 1
+    def add_new_card(self, question, awnser):
+        self.cards[self.index] = {"Frage": question, "Level": 1, "Antwort": awnser}
+        self.index += 1
+    def make_set(self, new_set):
+        json_cards = json.dumps(self.cards, indent=4)
+        json_new_name = new_set+".json"
+        json_file = open("sets/"+json_new_name, "x")
+        json_file.write(json_cards)
+        json_file.close()
