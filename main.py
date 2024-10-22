@@ -128,7 +128,7 @@ def modify_set():
     mod_card_window = tk.Tk()
     mod_card_window.title("Karten überarbeiten")
     card_full_info = mod_set.list_set()
-    option_list = [f"{key}: {data['Frage']})" for key, data in card_full_info.items()]
+    option_list = [f"{key}: {data['Frage']}" for key, data in card_full_info.items()]
     def test(key, *args):
         question_input.delete(0, tk.END)
         question_input.insert(0, f"{card_full_info[key]['Frage']}")
