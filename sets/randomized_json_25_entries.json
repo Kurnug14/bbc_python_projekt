@@ -1,125 +1,125 @@
 {
-    "0": {
+    "1": {
         "Frage": "Was versteht man unter Telematik?",
         "Level": 1,
         "Antwort": "Telematik ist die Kombination von Telekommunikation und Informatik zur \u00c3\u00bcbertragung, Verarbeitung und Speicherung von Daten."
     },
-    "1": {
+    "2": {
         "Frage": "Was ist ein Netzwerkprotokoll?",
         "Level": 3,
         "Antwort": "Ein Netzwerkprotokoll ist eine Regelmenge, die bestimmt, wie Daten \u00fcber ein Netzwerk \u00fcbertragen werden."
     },
-    "2": {
+    "3": {
         "Frage": "Was ist TCP/IP?",
         "Level": 5,
         "Antwort": "TCP/IP ist ein Protokollstapel, der f\u00fcr die Kommunikation im Internet und anderen Netzwerken genutzt wird."
     },
-    "3": {
+    "4": {
         "Frage": "Was bedeutet IP-Adresse?",
         "Level": 3,
         "Antwort": "Eine IP-Adresse ist eine eindeutige Nummer, die ein Ger\u00e4t in einem Netzwerk identifiziert."
     },
-    "4": {
+    "5": {
         "Frage": "Was ist ein Router?",
         "Level": 3,
         "Antwort": "Ein Router ist ein Ger\u00e4t, das den Datenverkehr zwischen verschiedenen Netzwerken weiterleitet."
     },
-    "5": {
+    "6": {
         "Frage": "Was ist ein VPN?",
         "Level": 3,
         "Antwort": "Ein VPN (Virtual Private Network) erm\u00f6glicht eine sichere und verschl\u00fcsselte Verbindung \u00fcber das Internet zu einem entfernten Netzwerk."
     },
-    "6": {
+    "7": {
         "Frage": "Was versteht man unter Latenz?",
         "Level": 2,
         "Antwort": "Latenz bezeichnet die Zeitverz\u00d6gerung bei der \u00dcbertragung von Daten in einem Netzwerk."
     },
-    "7": {
+    "8": {
         "Frage": "Was ist ein Server?",
         "Level": 1,
         "Antwort": "Ein Server ist ein Computer oder System, das Daten und Ressourcen f\u00fcr andere Computer bereitstellt."
     },
-    "8": {
+    "9": {
         "Frage": "Was ist ein Client?",
         "Level": 1,
         "Antwort": "Ein Client ist ein Ger\u00e4t oder eine Software, die auf die Dienste eines Servers zugreift."
     },
-    "9": {
-        "Frage": "Was versteht man unter der OSI-Modellschicht?",
+    "10": {
+        "Frage": "Waas versteht man unter der OSI-Modellschicht?",
         "Level": 5,
         "Antwort": "Das OSI-Modell besteht aus 7 Schichten, die verschiedene Aspekte der Netzwerkommunikation standardisieren."
     },
-    "10": {
+    "11": {
         "Frage": "Was bedeutet HTTP?",
         "Level": 1,
         "Antwort": "HTTP (Hypertext Transfer Protocol) ist ein Protokoll, das zur \u00dcbertragung von Webseiten im Internet verwendet wird."
     },
-    "11": {
+    "12": {
         "Frage": "Was ist ein Switch?",
         "Level": 2,
         "Antwort": "Ein Switch ist ein Netzwerkger\u00e4t, das Datenpakete an den richtigen Empf\u00e4nger innerhalb eines Netzwerks weiterleitet."
     },
-    "12": {
+    "13": {
         "Frage": "Was ist eine MAC-Adresse?",
         "Level": 1,
         "Antwort": "Eine MAC-Adresse ist eine eindeutige Hardwarekennung, die einer Netzwerkschnittstelle zugeordnet ist."
     },
-    "13": {
+    "14": {
         "Frage": "Was bedeutet DNS?",
         "Level": 1,
         "Antwort": "DNS (Domain Name System) \u00fcbersetzt Dom\u00e4nennamen wie www.example.com in IP-Adressen."
     },
-    "14": {
+    "15": {
         "Frage": "Was ist eine Firewall?",
         "Level": 2,
         "Antwort": "Eine Firewall ist eine Sicherheitsmassnahme, die den Datenverkehr \u00c3\u00bcberwacht und blockiert, um Netzwerke zu sch\u00fctzen."
     },
-    "15": {
+    "16": {
         "Frage": "Was ist Bandbreite?",
         "Level": 1,
         "Antwort": "Bandbreite beschreibt die Menge an Daten, die in einer bestimmten Zeitspanne \u00fcber ein Netzwerk \u00fcbertragen werden kann."
     },
-    "16": {
+    "17": {
         "Frage": "Was ist ein Gateway?",
         "Level": 4,
         "Antwort": "Ein Gateway ist ein Netzwerkpunkt, der verschiedene Netzwerke miteinander verbindet und den Datenverkehr zwischen ihnen vermittelt."
     },
-    "17": {
+    "18": {
         "Frage": "Was ist ein Peer-to-Peer-Netzwerk?",
         "Level": 1,
         "Antwort": "Ein Peer-to-Peer-Netzwerk ist eine Netzwerkarchitektur, in der alle Ger\u00e4te gleichberechtigt sind und direkt miteinander kommunizieren."
     },
-    "18": {
+    "19": {
         "Frage": "Was ist der Unterschied zwischen LAN und WAN?",
         "Level": 3,
         "Antwort": "LAN (Local Area Network) ist ein lokales Netzwerk, w\u00e4hrend WAN (Wide Area Network) ein Netzwerk ist, das \u00fcber grosse Entfernungen reicht."
     },
-    "19": {
+    "20": {
         "Frage": "Was ist ein Modem?",
         "Level": 3,
         "Antwort": "Ein Modem ist ein Ger\u00e4t, das Signale zwischen digitalen Ger\u00e4ten und analogen \u00dcbertragungsmedien umwandelt."
     },
-    "20": {
+    "21": {
         "Frage": "Was bedeutet QoS in Netzwerken?",
         "Level": 2,
         "Antwort": "QoS (Quality of Service) ist eine Technik zur Priorisierung bestimmter Arten von Netzwerkverkehr, um eine h\u00f6here Qualit\u00e4t zu gew\u00e4hrleisten."
     },
-    "21": {
+    "22": {
         "Frage": "Was ist IPv6?",
         "Level": 1,
         "Antwort": "IPv6 ist die neuere Version des Internetprotokolls, das eine gr\u00f6ssere Anzahl von IP-Adressen unterst\u00fctzt als IPv4."
     },
-    "22": {
+    "23": {
         "Frage": "Was ist eine Subnetzmaske?",
         "Level": 1,
         "Antwort": "Eine Subnetzmaske hilft, ein Netzwerk in kleinere Subnetze zu unterteilen und die Kommunikation zu optimieren."
     },
-    "23": {
+    "24": {
         "Frage": "Was bedeutet SSL?",
         "Level": 3,
         "Antwort": "SSL (Secure Sockets Layer) ist ein Protokoll, das sichere und verschl\u00fcsselte Verbindungen \u00fcber das Internet erm\u00f6glicht."
     },
-    "24": {
+    "25": {
         "Frage": "Was ist ein DHCP-Server?",
         "Level": 2,
         "Antwort": "Ein DHCP-Server weist automatisch IP-Adressen an Ger\u00e4te in einem Netzwerk zu."

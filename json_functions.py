@@ -1,13 +1,13 @@
 import json
 import random
+from textwrap import indent
 from typing import Union
 
-
-#Make an object that stores the functions and variables necessary to do a learning flashcard session
-
 class ActiveSet :
+
     def __init__(self, set_name):
         self.active_set = set_name
+
     #randomize the set
     def randomized_dic(self):
         json_file = open(self.active_set)
@@ -22,6 +22,7 @@ class ActiveSet :
         random.shuffle(temp)
         returnDict = dict(temp)
         return returnDict
+
     #load the card information
     def load_json(self, indexc):
         f = open(self.active_set)
@@ -29,6 +30,7 @@ class ActiveSet :
         data = json.load(f)
         f.close()
         return data[indexc]
+
     #modify the level of a card
     def mod_json(self,index_card, level):
         json_file = open(self.active_set)
@@ -39,15 +41,33 @@ class ActiveSet :
         between = json.dumps(data, indent=4)
         json_file_write.write(between)
         json_file_write.close()
-        print (index_card, level)
+
+    def list_set(self):
+        json_file = open(self.active_set)
+        data = json.load(json_file)
+        json_file.close()
+        full_dic = dict(data)
+        short_dic = {}
+        for index in full_dic:
+            short_dic[index] = {full_dic[index]["Frage"]}
+        return full_dic
+
+    def safe_set_changes(self, cards):
+        json_file = open(self.active_set, "w")
+        json_cards = json.dumps(cards, indent=4)
+        json_file.write(json_cards)
+        json_file.close()
+
 
 class NewSet:
     def __init__(self):
         self.cards = {}
         self.index = 1
+
     def add_new_card(self, question, awnser):
         self.cards[self.index] = {"Frage": question, "Level": 1, "Antwort": awnser}
         self.index += 1
+
     def make_set(self, new_set):
         json_cards = json.dumps(self.cards, indent=4)
         json_new_name = new_set+".json"
