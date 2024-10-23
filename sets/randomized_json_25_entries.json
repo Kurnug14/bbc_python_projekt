@@ -101,7 +101,7 @@
     },
     "21": {
         "Frage": "Was bedeutet QoS in Netzwerken?",
-        "Level": 2,
+        "Level": 1,
         "Antwort": "QoS (Quality of Service) ist eine Technik zur Priorisierung bestimmter Arten von Netzwerkverkehr, um eine h\u00f6here Qualit\u00e4t zu gew\u00e4hrleisten."
     },
     "22": {

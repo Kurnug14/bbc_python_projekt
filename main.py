@@ -9,7 +9,7 @@ def cancel (window):
     global cancel_button
     cancel_button = True
 
-# Function to center a window on the screen
+# Funktion welche die Fenster standartisiert
 def center_window(window, width, height):
     screen_width = window.winfo_screenwidth()
     screen_height = window.winfo_screenheight()
@@ -17,7 +17,7 @@ def center_window(window, width, height):
     y_coordinate = int((screen_height / 2) - (height / 2))
     window.geometry(f"{width}x{height}+{x_coordinate}+{y_coordinate}")
     window.attributes('-topmost', True)
-
+# GUI mit der Funktionalität neue Sets zu machen
 def new_card_gui():
     new_set = json_functions.NewSet()
     new_card_window = tk.Tk()
@@ -54,6 +54,7 @@ def new_card_gui():
     end_set_button.pack(side=tk.LEFT, padx=10, ipadx = 10)
     new_card_window.mainloop()
 
+#Funktionen die Parameter übergeben basierend auf dem Input. Diese modifizieren den Level Attribut
 def correct_answer(answer_window, card):
     card_data = current_set.load_json(card)
     card_data['Level'] += 1
@@ -66,7 +67,7 @@ def false_answer(answer_window, card):
     current_set.mod_json(card, card_data['Level'])
     answer_window.destroy()
 
-# Function to show the answer window
+# Funktion welche die Antwort der Karte anzeigen
 def show_answer(question_window, card):
     card_data = current_set.load_json(card)
     answer_window = tk.Tk()
@@ -84,7 +85,7 @@ def show_answer(question_window, card):
     false_button.pack(side=tk.LEFT, padx=10)
     question_window.destroy()
 
-# Function to show the question
+# Gibt den User die Frage
 def show_question(card):
     question_window = tk.Tk()
     card_data = current_set.load_json(card)
@@ -122,6 +123,7 @@ def flashcard_loop():
         flashcard_loop()
     main_menu()
 
+#Fenster mit der Fähigkeiten die Karten in einem Set zu bearbeiten
 def modify_set():
     set_var = choose_set()
     mod_set = json_functions.ActiveSet(set_var)
@@ -129,7 +131,8 @@ def modify_set():
     mod_card_window.title("Karten überarbeiten")
     card_full_info = mod_set.list_set()
     option_list = [f"{key}: {data['Frage']}" for key, data in card_full_info.items()]
-    def test(key, *args):
+
+    def get_card_infos(key, *args):
         question_input.delete(0, tk.END)
         question_input.insert(0, f"{card_full_info[key]['Frage']}")
         awnser_input.delete(0, tk.END)
@@ -149,7 +152,7 @@ def modify_set():
     card_label.grid(row=0, column=0, padx=10, pady=10)
 
     string_var_dropdown = tk.StringVar(mod_card_window, "Wähle eine Karte aus")
-    string_var_dropdown.trace("w", lambda *args: test(string_var_dropdown.get().split(":")[0]))
+    string_var_dropdown.trace("w", lambda *args: get_card_infos(string_var_dropdown.get().split(":")[0]))
     card_choice = tk.OptionMenu(mod_card_window, string_var_dropdown, *option_list)
     card_choice.config(width=40)
     card_choice.grid(row=0, column=1, padx=10, pady=10)
